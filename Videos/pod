@@ -1,0 +1,2 @@
+#! /bin/sh
+ffmpeg  -f image2 -framerate 1 -loop 1 -i img.png -i audio.m4a -pix_fmt yuv420p -c:v libx264 -preset:v ultrafast -crf 51 -c:a aac -t 00:25:57 gave-up.mp4
